@@ -1,20 +1,20 @@
-import React from 'react';
+import React from "react";
 import {
-  BrowserRouter,
-  browserHistory,
-} from 'react-router-dom';
+    BrowserRouter,
+    browserHistory
+} from "react-router-dom";
 import {
-  Route,
-} from 'react-router';
+    Route
+} from "react-router";
 
-import Home from '../home';
+import Home from "../home";
 
 const Router = () => (
-  <BrowserRouter history={browserHistory}>
-    <div>
-      <Route exact path="/" component={Home} />
-    </div>
-  </BrowserRouter>
+    <BrowserRouter history={browserHistory}>
+        <div>
+            <Route exact path="/" component={Home}/>
+        </div>
+    </BrowserRouter>
 
 );
 

@@ -1,13 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 const ViewUsername = props => (
-  <div>
-    {props.username}
-  </div>
+    <div>
+        {props.username}
+    </div>
 );
 ViewUsername.propTypes = {
-  username: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired
 };
 
 export default ViewUsername;
