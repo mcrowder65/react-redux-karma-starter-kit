@@ -1,0 +1,23 @@
+.search-input {
+  width: 500px;
+}
+
+.info-display {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.title {
+  margin: 200px;
+}
+
+.row {
+  margin-left: 30px;
+}
+.item {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
