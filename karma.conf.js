@@ -7,21 +7,19 @@ module.exports = function (config) {
         autoWatch: false,
         frameworks: ["mocha", "chai"],
         files: [
-            "tests.webpack.js"
+            "test/**/*.jsx"
         ],
         preprocessors: {
-            "test/**/*.jsx": "coverage",
-            "tests.webpack.js": ["webpack", "sourcemap"]
+            "test/**/*.jsx": ["webpack", "sourcemap"]
         },
         reporters: ["spec", "coverage"],
         webpack: {
-            entry: "./tests.webpack.js",
             resolve: {
                 extensions: [".js", ".jsx"]
             },
             module: {
                 loaders: [{
-                    test: /\.jsx$/,
+                    test: /\.jsx|.js$/,
                     loader: "babel-loader",
                     exclude: /node_modules/
                 }, {
