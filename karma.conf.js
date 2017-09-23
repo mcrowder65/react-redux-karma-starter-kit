@@ -6,23 +6,41 @@ module.exports = function (config) {
         singleRun: true, //just run once by default
         frameworks: ["mocha", "chai"], //use the mocha test framework
         files: [
+            "src/client/actions/index.jsx",
             "tests.webpack.js" //just load this file
         ],
-        plugins: ["karma-chrome-launcher", "karma-chai", "karma-mocha",
-            "karma-sourcemap-loader", "karma-webpack", "karma-coverage",
+        plugins: [
+            "karma-chrome-launcher",
+            "karma-chai",
+            "karma-mocha",
+            "karma-sourcemap-loader",
+            "karma-webpack",
+            "karma-coverage",
             "karma-mocha-reporter"
         ],
         preprocessors: {
+            "src/client/actions/index.jsx": ["webpack", "sourcemap", "coverage"],
             "tests.webpack.js":
-                ["webpack", "sourcemap"] //preprocess with webpack and our sourcemap loader
+                ["webpack", "sourcemap", "coverage"]
         },
-        reporters: ["mocha", "coverage"], //report results in this format
+        reporters: ["mocha", "progress", "coverage"], //report results in this format
         webpack: { //kind of a copy of your webpack config
             devtool: "inline-source-map", //just do inline source maps instead of the default
             module: {
-                loaders: [
-                    {test: /\.jsx$/, loader: "babel-loader"}
-                ]
+                loaders: [{
+                    test: /\.js$/,
+                    loader: "babel-loader",
+                    exclude: /node_modules/
+                },
+                    {
+                        test: /\.jsx$/,
+                        loader: "babel-loader",
+                        exclude: /node_modules/
+                    },
+                    {
+                        test: /\.css$/,
+                        loader: "style-loader!css-loader"
+                    }]
             },
             resolve: {
                 extensions: [".js", ".jsx"]
