@@ -1,9 +1,8 @@
-import {setUsername} from "../../../src/client/actions/index";
-import {SET_USERNAME} from "../../../src/client/actions/action-types";
+import {setUsername, setIsDrawerOpen} from "../../../src/client/actions/index";
+import {SET_IS_DRAWER_OPEN, SET_USERNAME} from "../../../src/client/actions/action-types";
 
 describe("src/client/actions/index.jsx", () => {
     describe("function setUsername()", () => {
-
         it("null should throw error", () => {
             expect(() => setUsername(null)).to.throw();
         });
@@ -39,5 +38,18 @@ describe("src/client/actions/index.jsx", () => {
         it(`${val} should return action with type ${SET_USERNAME} and username: ${val}`, () => {
             expect(setUsername(val)).eql(newVal);
         });
+    });
+    describe("function setIsDrawerOpen()", () => {
+        let obj = {
+            type: SET_IS_DRAWER_OPEN
+        };
+        let isDrawerOpen = false;
+        it(`null should return isDrawerOpen=${isDrawerOpen}`, () => {
+            expect(setIsDrawerOpen(null)).eql({...obj, isDrawerOpen});
+        });
+        it(`undefined should return isDrawerOpen=${isDrawerOpen}`, () => {
+            expect(setIsDrawerOpen(undefined)).eql({...obj, isDrawerOpen});
+        });
+
     });
 });
