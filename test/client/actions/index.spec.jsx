@@ -1,5 +1,5 @@
 import {setUsername} from "../../../src/client/actions/index";
-import {SET_IS_DRAWER_OPEN} from "../../../src/client/actions/action-types";
+import {SET_USERNAME} from "../../../src/client/actions/action-types";
 
 describe("src/client/actions/index.jsx", () => {
     describe("function setUsername()", () => {
@@ -14,27 +14,30 @@ describe("src/client/actions/index.jsx", () => {
         it("empty string should throw error", () => {
             expect(() => setUsername("")).to.throw();
         });
-        const arbNum = 1234;
-        let val = arbNum;
-        it(`${val} should throw error`, () => {
-            console.log(typeof val);
-            expect(() => setUsername(val)).to.throw();
+        let val = 1234;
+        it(`${val} should throw`, () => {
+            expect(() => setUsername(val).to.throw());
+        });
+        it(`${val = -1} should throw`, () => {
+            expect(() => setUsername(val).to.throw());
         });
 
-        it(`${val = -1} should throw error`, () => {
-            expect(() => setUsername(val)).to.throw();
+        it(`${val = 1} should throw`, () => {
+            expect(() => setUsername(val).to.throw());
         });
 
-        it(`${val = 0} should throw error`, () => {
-            expect(() => setUsername(val)).to.throw();
+        it(`${val = 0} should throw`, () => {
+            expect(() => setUsername(val).to.throw());
         });
-
-        it(`${val = 1} should throw error`, () => {
-            expect(() => setUsername(val)).to.throw();
-        });
-
         it(`${val = "matt"} should not throw`, () => {
             expect(() => setUsername(val)).to.not.throw();
+        });
+        const newVal = {
+            type: SET_USERNAME,
+            username: val
+        };
+        it(`${val} should return action with type ${SET_USERNAME} and username: ${val}`, () => {
+            expect(setUsername(val)).eql(newVal);
         });
     });
 });
