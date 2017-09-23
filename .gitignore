@@ -4,3 +4,4 @@ bundle.js
 build
 lib
 npm-debug.log
+coverage
