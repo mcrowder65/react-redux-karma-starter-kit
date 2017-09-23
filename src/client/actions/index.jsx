@@ -10,7 +10,9 @@ export const setUsername = username => {
     };
 };
 
-export const setIsDrawerOpen = isDrawerOpen => ({
-    type: SET_IS_DRAWER_OPEN,
-    isDrawerOpen
-});
+export const setIsDrawerOpen = isDrawerOpen => {
+    return {
+        type: SET_IS_DRAWER_OPEN,
+        isDrawerOpen
+    };
+};
