@@ -1,6 +1,6 @@
 {
   "name": "react-redux-karma-starter-kit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React, Redux, Webpack, Babel, Karma, and code coverage all provided for you",
   "main": "index.js",
   "scripts": {
@@ -44,7 +44,7 @@
     "babel-preset-react": "^6.24.1",
     "chai": "^4.1.2",
     "css-loader": "^0.28.7",
-    "eslint": "^4.5.0",
+    "eslint": "^4.7.2",
     "eslint-config-walmart": "^1.2.4",
     "eslint-plugin-filenames": "^1.2.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",

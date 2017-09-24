@@ -15,4 +15,4 @@ anywhere.
 
 ##How to use me
 
-`npm install react-redux-starter-kit && ./shell-script.sh`
+`npm install react-redux-karma-starter-kit && ./node_modules/react-redux-karma-starter-kit/setup.sh`
