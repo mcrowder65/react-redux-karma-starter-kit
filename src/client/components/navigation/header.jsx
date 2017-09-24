@@ -18,9 +18,6 @@ const Header = props => (
                     onClick={() => props.setIsDrawerOpen(true)}>
                     <MenuIcon/>
                 </IconButton>
-                <Typography type="title" color="inherit">
-                    Buffalo
-                </Typography>
             </Toolbar>
         </AppBar>
         <div className="body">

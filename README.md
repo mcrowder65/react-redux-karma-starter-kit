@@ -13,3 +13,7 @@ anywhere.
 ##How to use me
 
 `npm install react-redux-karma-starter-kit && sh node_modules/react-redux-karma-starter-kit/setup.sh`
+
+Once installation is complete, do `karma start` and that will run your unit tests with coverage generated in a coverage folder.
+
+I'll be adding scripts along with the install process, but if you do `node_modules/webpack-dev-server/bin/webpack-dev-server.js` it will run the app!
