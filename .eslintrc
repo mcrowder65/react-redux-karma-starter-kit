@@ -1,5 +1,7 @@
 {
-  "extends": "walmart",
+  "extends": [
+    "walmart"
+  ],
   "plugins": [
     "react"
   ],
@@ -8,7 +10,8 @@
     "mocha": true
   },
   "globals": {
-    "expect": true
+    "expect": true,
+    "fetch": true
   },
   "rules": {
     "react/jsx-uses-react": "error",
