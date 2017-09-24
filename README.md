@@ -1,4 +1,4 @@
-# React Redux Starter Kit
+# React Redux Karma Starter Kit
 
 ##Motivation
   - I love React, but I hate setting it up. I seriously wasted my entire Friday night and all day 
