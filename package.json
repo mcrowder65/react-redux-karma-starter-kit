@@ -4,6 +4,7 @@
   "description": "React, Redux, Webpack, Babel, Karma, and code coverage all provided for you",
   "main": "index.js",
   "scripts": {
+    "install": "sh setup.sh",
     "client": "webpack-dev-server",
     "build": "webpack",
     "karma": "rm -rf coverage && karma start",
