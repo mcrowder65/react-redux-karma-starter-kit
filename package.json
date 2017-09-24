@@ -1,10 +1,10 @@
 {
   "name": "react-redux-karma-starter-kit",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "React, Redux, Webpack, Babel, Karma, and code coverage all provided for you",
   "main": "index.js",
   "scripts": {
-    "install": "sh setup/index.sh",
+    "install": "sh setup.sh",
     "client": "webpack-dev-server",
     "build": "webpack",
     "karma": "rm -rf coverage && karma start",
