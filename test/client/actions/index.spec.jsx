@@ -40,10 +40,10 @@ describe("src/client/actions/index.jsx", () => {
         });
     });
     describe("function setIsDrawerOpen()", () => {
-        let obj = {
+        const obj = {
             type: SET_IS_DRAWER_OPEN
         };
-        let isDrawerOpen = false;
+        const isDrawerOpen = false;
         it(`null should return isDrawerOpen=${isDrawerOpen}`, () => {
             expect(setIsDrawerOpen(null)).eql({...obj, isDrawerOpen});
         });
