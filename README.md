@@ -13,7 +13,9 @@ anywhere.
 ##How to use me
 
 `npm install react-redux-karma-starter-kit`
+
 NOTE: do not do --save or --save-dev, because then that will add it to your dependencies and run the install script everytime and overwrite your src and test folders!
+
 This will be solved in a future version so that you can't save it to package.json.
 Once installation is complete, do `karma start` and that will run your unit tests with coverage generated in a coverage folder.
 
