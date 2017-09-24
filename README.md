@@ -12,8 +12,9 @@ anywhere.
 
 ##How to use me
 
-`npm install react-redux-karma-starter-kit && sh node_modules/react-redux-karma-starter-kit/setup.sh`
-
+`npm install react-redux-karma-starter-kit`
+NOTE: do not do --save or --save-dev, because then that will add it to your dependencies and run the install script everytime and overwrite your src and test folders!
+This will be solved in a future version so that you can't save it to package.json.
 Once installation is complete, do `karma start` and that will run your unit tests with coverage generated in a coverage folder.
 
 I'll be adding scripts along with the install process, but if you do `node_modules/webpack-dev-server/bin/webpack-dev-server.js` it will run the app!
