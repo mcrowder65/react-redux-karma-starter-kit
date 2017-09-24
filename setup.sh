@@ -11,7 +11,7 @@ cp webpack.config.js ../../webpack.config.js
 
 cd ../..
 echo "PWD: " $(pwd)
-sh node_modules/react-redux-karma-starter-kit/install-dependencies.sh
-sh node_modules/react-redux-karma-starter-kit/install-dev-dependencies.sh
+npm install --save $(node node_modules/react-redux-karma-starter-kit/list-dependencies.js)
+npm install --save-dev $(node node_modules/react-redux-karma-starter-kit/list-dev-dependencies.js)
 #npm uninstall --save react-redux-karma-starter-kit
 #npm uninstall --save-dev react-redux-karma-starter-kit
