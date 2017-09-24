@@ -1,7 +1,7 @@
 {
-  "name": "equity-ballers",
-  "version": "1.0.0",
-  "description": "",
+  "name": "React Redux Starter Kit",
+  "version": "0.0.1",
+  "description": "React, Redux, Webpack, Babel, Karma, and code coverage all provided for you",
   "main": "index.js",
   "scripts": {
     "client": "webpack-dev-server",
@@ -10,6 +10,10 @@
     "test": "eslint src --ext .js,.jsx",
     "check": "npm test && npm run build",
     "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mcrowder65/react-redux-starter-kit"
   },
   "author": "",
   "license": "ISC",
