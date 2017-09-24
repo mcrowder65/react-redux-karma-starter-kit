@@ -7,6 +7,7 @@ module.exports = function (config) {
         autoWatch: false,
         frameworks: ["mocha", "chai"],
         files: [
+            "node_modules/babel-polyfill/dist/polyfill.js",
             "test/**/*.jsx"
         ],
         preprocessors: {
