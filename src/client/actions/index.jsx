@@ -4,10 +4,6 @@ export const setUsername = username => {
     if (!username || username.length === 0 || typeof username !== "string") {
         throw Error("username must be non empty string");
     }
-    const b = {
-        a: "2"
-    };
-    const c = {...b};
     return {
         type: SET_USERNAME,
         username

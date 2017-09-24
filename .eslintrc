@@ -6,14 +6,6 @@
   "rules": {
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
-    "react/jsx-closing-bracket-location": "off",
-    "react/sort-prop-types": "error",
-    "jsx-a11y/href-no-hash": "off",
-    "eol-last": "off",
-    "import/extensions": "off",
-    "comma-dangle": "off",
-    "arrow-parens": "off",
-    "brace-style": "off",
-    "arrow-body-style": "off"
+    "eol-last": "off"
   }
 }

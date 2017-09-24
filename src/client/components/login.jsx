@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 
 import {setUsername} from "../actions/index";
 import ViewUsername from "./view-username";
-import base from "../styles/base.css";
 
 const Login = props => {
     return (
