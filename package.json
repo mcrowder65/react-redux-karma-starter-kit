@@ -1,6 +1,6 @@
 {
   "name": "react-redux-karma-starter-kit",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "React, Redux, Webpack, Babel, Karma, and code coverage all provided for you",
   "main": "index.js",
   "scripts": {
@@ -35,6 +35,7 @@
     "webpack-dev-server": "^2.7.1"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-istanbul": "^4.1.5",
