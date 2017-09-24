@@ -13,5 +13,5 @@ cd ../..
 echo "PWD: " $(pwd)
 sh node_modules/react-redux-karma-starter-kit/install-dependencies.sh
 sh node_modules/react-redux-karma-starter-kit/install-dev-dependencies.sh
-npm uninstall --save react-redux-karma-starter-kit
-npm uninstall --save-dev react-redux-karma-starter-kit
+#npm uninstall --save react-redux-karma-starter-kit
+#npm uninstall --save-dev react-redux-karma-starter-kit
