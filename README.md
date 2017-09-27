@@ -11,6 +11,7 @@ anywhere.
 
 
 ##How to use me
+
 Create a directory.
 
 In that directory, do `npm init`, follow the prompts,

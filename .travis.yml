@@ -1,0 +1,13 @@
+language: node_js
+node_js: 6.11.2
+test:
+  - echo 'LOCAL-TEST'
+  - npm test
+  - echo 'GLOBAL TEST'
+  - mkdir npm-install && cd npm-install
+  - npm init -y
+  - npm install react-redux-karma-starter-kit
+  - node_modules/karma/bin/start
+  - node_modules/webpack/bin/webpack.js
+install:
+  - npm install
