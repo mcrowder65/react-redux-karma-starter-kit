@@ -27,6 +27,13 @@ module.exports = function (config) {
                     test: /\.css$/,
                     loader: "style-loader!css-loader"
                 }]
+            },
+            externals: {
+                "react/addons": true,
+                "jsdom": "window",
+                "cheerio": "window",
+                "react/lib/ExecutionEnvironment": true,
+                "react/lib/ReactContext": true
             }
         },
         coverageReporter: {

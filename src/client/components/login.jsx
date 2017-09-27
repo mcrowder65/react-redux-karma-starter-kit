@@ -9,7 +9,7 @@ const Login = props => {
     return (
         <div>
             <ViewUsername username={props.username}/>
-            <button onClick={() => props.setUsername("hello")}>Click me</button>
+            <button id="username-click" onClick={() => props.setUsername("hello")}>Click me</button>
         </div>
     );
 };

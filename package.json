@@ -1,8 +1,19 @@
 {
   "name": "react-redux-karma-starter-kit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React, Redux, Webpack, Babel, Karma, and code coverage all provided for you",
   "main": "index.js",
+  "keywords": [
+    "react",
+    "redux",
+    "react router",
+    "webpack",
+    "karma",
+    "istanbul",
+    "mocha",
+    "chai",
+    "react starter kit"
+  ],
   "scripts": {
     "install": "sh setup.sh",
     "client": "webpack-dev-server",
@@ -48,6 +59,7 @@
     "babel-preset-react": "^6.24.1",
     "chai": "^4.1.2",
     "css-loader": "^0.28.7",
+    "enzyme": "^2.9.1",
     "eslint": "^4.7.2",
     "eslint-config-walmart": "^1.2.4",
     "eslint-plugin-filenames": "^1.2.0",
@@ -65,6 +77,8 @@
     "karma-spec-reporter": "0.0.31",
     "karma-webpack": "^2.0.4",
     "mocha": "^3.5.3",
+    "react-addons-test-utils": "^15.6.2",
+    "react-test-renderer": "^16.0.0",
     "style-loader": "^0.18.2"
   }
 }
