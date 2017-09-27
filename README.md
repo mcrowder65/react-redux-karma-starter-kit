@@ -11,8 +11,11 @@ anywhere.
 
 
 ##How to use me
+Create a directory.
 
-`npm install react-redux-karma-starter-kit`
+In that directory, do `npm init`, follow the prompts,
+
+then run `npm install react-redux-karma-starter-kit`
 
 NOTE: If you do `--save-dev` or `--save` bad things will happen, so don't do it!!
 
