@@ -1,6 +1,6 @@
 {
   "name": "react-redux-karma-starter-kit",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "React, Redux, Webpack, Babel, Karma, and code coverage all provided for you",
   "main": "index.js",
   "keywords": [
@@ -34,7 +34,6 @@
   "license": "ISC",
   "dependencies": {
     "html-webpack-plugin": "^2.30.1",
-    "isomorphic-fetch": "^2.2.1",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
