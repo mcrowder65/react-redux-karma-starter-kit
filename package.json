@@ -1,6 +1,6 @@
 {
   "name": "react-redux-karma-starter-kit",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "React, Redux, Webpack, Babel, Karma, and code coverage all provided for you",
   "main": "index.js",
   "keywords": [

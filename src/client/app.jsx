@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {createStore, applyMiddleware} from "redux";
+import {createStore, applyMiddleware, compose} from "redux";
 import {Provider} from "react-redux";
 import thunk from "redux-thunk";
 import "babel-polyfill";
@@ -13,7 +13,7 @@ import "./styles/home.css";
 
 /* eslint no-underscore-dangle: "off" */
 /* global window */
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__;
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(rootReducer, initialState,
     composeEnhancers(applyMiddleware(thunk)));
 
