@@ -1,21 +1,14 @@
 import {combineReducers} from "redux";
 
-import {SET_USERNAME, SET_IS_DRAWER_OPEN} from "../actions/action-types";
+import {SET_INPUT} from "../actions/types";
+import initialState from "./initial-state";
 
-const username = (store, action) => {
-    if (action.type === SET_USERNAME) {
-        return action.username;
+const input = (state = initialState.input, action) => {
+    if (action.type === SET_INPUT) {
+        return action.input;
     }
-    return store || "";
-};
-
-const isDrawerOpen = (store, action) => {
-    if (action.type === SET_IS_DRAWER_OPEN) {
-        return action.isDrawerOpen;
-    }
-    return store || false;
+    return state;
 };
 export default combineReducers({
-    username,
-    isDrawerOpen
+    input
 });

@@ -7,14 +7,12 @@ import {
     Route
 } from "react-router";
 
-import Login from "../login";
-import Home from "../home";
+import Home from "./components/home";
 
 const Router = () => (
     <BrowserRouter history={browserHistory}>
         <div>
             <Route exact path="/" component={Home}/>
-            <Route exact path="/login" component={Login}/>
         </div>
     </BrowserRouter>
 

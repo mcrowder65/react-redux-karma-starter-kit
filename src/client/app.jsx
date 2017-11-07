@@ -6,7 +6,7 @@ import thunk from "redux-thunk";
 import "babel-polyfill";
 
 import rootReducer from "./reducers/index";
-import Router from "./components/navigation/router";
+import Router from "./router";
 import initialState from "./reducers/initial-state";
 import "./styles/base.css";
 import "./styles/home.css";
