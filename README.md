@@ -1,5 +1,5 @@
 # React Redux Karma Starter Kit
-
+[![NPM version][npm-image]][npm-url]
 ## Motivation
   - I love React, but I hate setting it up. I seriously wasted my entire Friday night and all day 
  Saturday trying to setup istanbul.
@@ -25,3 +25,7 @@ NOTE: If you do `--save-dev` or `--save` bad things will happen, so don't do it!
 Once installation is complete, do `node_modules/karma/bin/karma start` and that will run your unit tests with coverage generated in a coverage folder.
 
 I'll be adding scripts along with the install process, but if you do `node_modules/webpack-dev-server/bin/webpack-dev-server.js` it will run the app!
+
+
+[npm-image]: https://badge.fury.io/js/react-redux-karma-starter-kit.svg
+[npm-url]: https://npmjs.org/package/react-redux-karma-starter-kit
