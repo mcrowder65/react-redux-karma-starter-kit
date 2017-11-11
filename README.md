@@ -22,9 +22,9 @@ NOTE: If you do `--save-dev` or `--save` bad things will happen, so don't do it!
 
 **SECOND NOTE**: Keep in mind, this deletes your src and test folders and will overwrite other files: `.eslintrc, .babelrc, karma.conf.js, and webpack.config.js`
 
-Once installation is complete, do `node_modules/karma/bin/karma start` and that will run your unit tests with coverage generated in a coverage folder.
+Once installation is complete, do `npm test` and that will run your unit tests with coverage generated in a coverage folder.
 
-I'll be adding scripts along with the install process, but if you do `node_modules/webpack-dev-server/bin/webpack-dev-server.js` it will run the app!
+You can also do, `npm start`, which will run `webpack-dev-server`
 
 
 [npm-image]: https://badge.fury.io/js/react-redux-karma-starter-kit.svg
