@@ -1,5 +1,5 @@
 const fs = require("fs");
-const pkg = require("./pkg.json");
+const pkg = require("./package.json");
 pkg.scripts.start = "webpack-dev-server";
 pkg.scripts.test = "karma start";
 
