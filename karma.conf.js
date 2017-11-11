@@ -1,5 +1,4 @@
 var webpack = require("webpack");
-
 module.exports = function (config) {
     config.set({
         browsers: ["PhantomJS"],
@@ -8,10 +7,12 @@ module.exports = function (config) {
         frameworks: ["mocha", "chai"],
         files: [
             "node_modules/babel-polyfill/dist/polyfill.js",
-            "test/**/*.jsx"
+            "test/**/*(spec|test)*.js*",
+            "src/**/!(app)*.js*"
         ],
         preprocessors: {
-            "test/**/*.jsx": ["webpack", "sourcemap"]
+            "src/**/!(app)*.js*": ["webpack", "sourcemap"],
+            "test/**/*(spec|test)*.js*": ["webpack", "sourcemap"]
         },
         reporters: ["spec", "coverage"],
         webpack: {
@@ -37,6 +38,7 @@ module.exports = function (config) {
             }
         },
         coverageReporter: {
+            includeAllSources: true,
             reporters: [
                 {type: "json", file: "coverage.json"},
                 {type: "lcov"},
