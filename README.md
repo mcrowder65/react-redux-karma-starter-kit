@@ -1,5 +1,7 @@
 # React Redux Karma Starter Kit
 [![NPM version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+
 ## Motivation
   - I love React, but I hate setting it up. I seriously wasted my entire Friday night and all day 
  Saturday trying to setup istanbul.
@@ -29,3 +31,6 @@ You can also do, `npm start`, which will run `webpack-dev-server`
 
 [npm-image]: https://badge.fury.io/js/react-redux-karma-starter-kit.svg
 [npm-url]: https://npmjs.org/package/react-redux-karma-starter-kit
+
+[travis-image]: https://travis-ci.org/mcrowder65/react-redux-karma-starter-kit.svg?branch=master
+[travis-url]: https://travis-ci.org/mcrowder65/react-redux-karma-starter-kit
