@@ -1,13 +1,12 @@
 language: node_js
 node_js: 6.11.2
-install:
-  - npm install
 script:
   - echo 'LOCAL-TEST';
-  - npm test;
+  - npm install eslint;
+  - npm run linter;
   - echo 'GLOBAL TEST';
   - mkdir npm-install && cd npm-install;
   - npm init -y;
   - npm install react-redux-karma-starter-kit;
-  - npm test
-  - node_modules/webpack/bin/webpack.js
+  - npm test;
+  - node_modules/webpack/bin/webpack.js;

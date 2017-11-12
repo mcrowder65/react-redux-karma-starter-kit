@@ -16,7 +16,6 @@
   ],
   "scripts": {
     "install": "sh setup.sh",
-    "postinstall": "npm uninstall --save react-redux-karma-starter-kit && npm uninstall --save-dev react-redux-karma-starter-kit",
     "client": "webpack-dev-server",
     "build": "webpack",
     "karma": "rm -rf coverage && karma start",
